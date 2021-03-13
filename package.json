@@ -4,18 +4,26 @@
   "description": "",
   "main": "main.ts",
   "scripts": {
-    "start": "node dist/main.js",
-    "dev": "nodemon src/main.ts",
+    "start": "nodemon src/main.ts",
+    "start:build": "node dist/main.js",
     "build": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Leonardo Mattevi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^4.4.1",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
+    "@types/config": "0.0.38",
     "@types/express": "^4.17.11",
+    "@types/helmet": "^4.0.0",
+    "@types/morgan": "^1.9.2",
     "@types/node": "^14.14.32",
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
